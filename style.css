@@ -1,0 +1,77 @@
+* {
+  font-family: "Playfair Display", "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --lightBlue: #008fb3;
+  --shadow: #00000030;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    167deg,
+    var(--lightBlue) 71%,
+    var(--shadow) 71.4%,
+    var(--white) 72%
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-container {
+  position: relative;
+  margin-top: 4.5%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+}
+
+.header-profile-pic {
+  box-shadow: #00000050 5px 5px 10px;
+  z-index: 1;
+}
+
+.user-name {
+  position: absolute;
+  top: 85%;
+  transform: translateX(20%);
+  color: var(--white);
+  font-size: 5rem;
+}
+
+.about-me {
+  align-self: center;
+  height: 63vh;
+  background-color: white;
+  box-shadow: var(--shadow) 5px 5px 10px;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  color: #4d4d4d;
+  display: grid;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: lighter;
+  padding: 1.5rem 0;
+}
+
+#icons {
+  justify-self: end;
+  align-self: end;
+  display: flex;
+}
+
+.icons {
+  height: 2.3rem;
+  padding: 0 1.1rem 1rem 0;
+}
