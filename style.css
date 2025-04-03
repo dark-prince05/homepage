@@ -12,7 +12,6 @@
 }
 
 header {
-  min-height: 100vh;
   background-image: linear-gradient(
     166deg,
     var(--lightBlue) 65%,
@@ -48,6 +47,7 @@ header {
   bottom: 1%;
   left: 20%;
   color: var(--white);
+  text-shadow: 0 0 10px var(--white);
   font-size: 5vw;
 }
 
@@ -224,7 +224,6 @@ footer {
 
 @media (min-width: 600px) and (max-width: 1024px) {
   header {
-    min-height: 1vh;
     background-image: linear-gradient(
       167deg,
       var(--lightBlue) 55%,
@@ -247,6 +246,12 @@ footer {
     bottom: 45%;
     left: -5%;
     height: 49%;
+  }
+
+  .header-img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #icons {
@@ -273,6 +278,7 @@ footer {
     top: 5%;
     left: 80%;
     text-wrap: nowrap;
+    text-shadow: 0 0 10px var(--white);
   }
 
   h2 {
@@ -355,5 +361,137 @@ footer {
 
   .footer-icon {
     height: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background-image: linear-gradient(
+      158deg,
+      var(--lightBlue) 30%,
+      var(--shadow) 30.2%,
+      var(--white) 30%
+    );
+  }
+
+  #header-container {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header-img-content {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    padding-top: 2rem;
+  }
+
+  .header-img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 8px 8px 10px var(--shadow);
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .icons {
+    height: 3rem;
+  }
+
+  .about-me {
+    display: block;
+    box-shadow: none;
+    height: calc(85vw + 40vh);
+  }
+
+  .about {
+    font-size: calc(1.3rem + 2vw);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about span {
+    display: none;
+  }
+
+  .user-name {
+    font-size: 16vw;
+    position: absolute;
+    bottom: -1%;
+    left: 4%;
+    text-wrap: nowrap;
+    text-shadow: 0 0 10px var(--white);
+  }
+
+  h2 {
+    font-size: 12vw;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .main-header {
+    font-size: 3.5rem;
+    align-self: center;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    margin-top: 10rem;
+  }
+
+  .footer-container {
+    width: 100%;
+    display: block;
+  }
+
+  .footer-heading {
+    font-size: 3.7rem;
+    text-align: center;
+  }
+
+  .footer-content p {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  .footer-img {
+    width: 100%;
+    height: 35rem;
+  }
+
+  .footer-img img {
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .contact-details p {
+    font-size: 1.3rem;
+  }
+
+  .footer-icon {
+    height: 3.5rem;
+  }
+
+  #footer-icons {
+    display: flex;
+    justify-content: center;
   }
 }
