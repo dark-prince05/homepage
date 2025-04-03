@@ -409,7 +409,7 @@ footer {
   .about-me {
     display: block;
     box-shadow: none;
-    height: calc(85vw + 55vh);
+    height: 100vh;
   }
 
   .about {
